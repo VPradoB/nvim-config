@@ -19,9 +19,9 @@ vim.keymap.set("x", "<leader>p", '"_dP')
 
 -- copy entire line  on normal mode or visual mode
 vim.keymap.set("n", "<leader>y", '"+y')
-vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("v", "Y", '"+y')
 
---copy entire line with \n in normal mode
+--copy entire line with \n in normal to system clipboard
 vim.keymap.set("n", "<leader>Y", '"+Y')
 
 -- deleteing registers
@@ -34,5 +34,6 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- make script executables without using chmod from console
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
--- swap between tmux instances
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux new tmux-sessionizer<CR>")
+-- format a file
+vim.keymap.set('n', '<C-f>', '<cmd>lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
+
