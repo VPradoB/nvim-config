@@ -1,5 +1,5 @@
 -- move up and down with shift+j and shift+k in visual mode
-vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 
 -- when using shift+j in normal mode the cursor stays in the line start
@@ -37,3 +37,4 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- format a file
 vim.keymap.set('n', '<C-f>', '<cmd>lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
 
+vim.keymap.set('n', '<leader>pv', '<cmd> Ex <CR>')
