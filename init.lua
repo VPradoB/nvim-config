@@ -1,2 +1,2 @@
 require("kickstart")
-require("vprado")
+require("vprado.config")
