@@ -26,6 +26,8 @@ vim.keymap.set(
 	{ desc = "Delete other buffers but the current one" }
 )
 
+vim.keymap.set({ "n" }, "<leader>uk", "<cmd>Screenkey<CR>")
+
 -- C-s for save
 vim.api.nvim_set_keymap("n", "<C-s>", ":lua SaveFile()<CR>", { noremap = true, silent = true })
 
