@@ -13,8 +13,12 @@ return {
 			["<leader>p"] = "actions.preview", -- Preview entry
 			["-"] = "actions.parent", -- Go to parent directory
 			["_"] = "actions.open_cwd", -- Open current working directory
+			["g."] = { "actions.toggle_hidden", mode = "n" },
 		},
 		use_default_keymaps = false, -- Do not use default key mappings
+	},
+	view_options = {
+		show_hidden = true,
 	},
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
