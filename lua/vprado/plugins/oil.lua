@@ -14,6 +14,7 @@ return {
 			["-"] = "actions.parent", -- Go to parent directory
 			["_"] = "actions.open_cwd", -- Open current working directory
 			["g."] = { "actions.toggle_hidden", mode = "n" },
+			["<C-c>"] = { "actions.close", mode = "n" },
 		},
 		use_default_keymaps = false, -- Do not use default key mappings
 	},
