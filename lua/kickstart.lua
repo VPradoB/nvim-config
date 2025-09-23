@@ -1,51 +1,5 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
-vim.o.termguicolors = true
-
-vim.g.have_nerd_font = true
-
-vim.opt.number = true
-
-vim.opt.mouse = "a"
-
-vim.opt.showmode = false
-
-vim.schedule(function()
-	vim.opt.clipboard = "unnamedplus"
-end)
-
-vim.opt.breakindent = true
-
-vim.opt.undofile = true
-
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-
-vim.opt.signcolumn = "yes"
-
-vim.opt.updatetime = 250
-
-vim.opt.timeoutlen = 300
-
-vim.opt.inccommand = "split"
-
-vim.opt.cursorline = true
-
-vim.opt.scrolloff = 10
-
-vim.opt.confirm = true
-
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
--- Diagnostic keymaps
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
-
-vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
-
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
@@ -68,14 +22,10 @@ require("lazy").setup({
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 	{ import = "vprado.plugins" },
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
+		"rebelot/kanagawa.nvim",
+		name = "kanagawa",
 		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha",
-			})
-			vim.cmd.colorscheme("catppuccin")
+			vim.cmd.colorscheme("kanagawa")
 		end,
 	},
 	{
