@@ -1,5 +1,7 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	branch = "master",
+	lazy = false,
 	build = ":TSUpdate",
 	main = "nvim-treesitter.configs", -- Sets main module to use for opts
 	opts = {
@@ -20,8 +22,8 @@ return {
 		auto_install = true,
 		highlight = {
 			enable = true,
-			additional_vim_regex_highlighting = { "ruby" },
+			additional_vim_regex_highlighting = { "ruby", "python" },
 		},
-		indent = { enable = true, disable = { "ruby" } },
+		indent = { enable = true, disable = { "ruby", "python" } },
 	},
 }
