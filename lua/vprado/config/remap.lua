@@ -12,7 +12,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer &<CR>")
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
@@ -24,8 +23,6 @@ vim.keymap.set(
 	'<Esc>:%bdelete|edit #|normal`"<Return>',
 	{ desc = "Delete other buffers but the current one" }
 )
-
-vim.keymap.set({ "n" }, "<leader>uk", "<cmd>Screenkey<CR>")
 
 -- C-s for save
 vim.api.nvim_set_keymap("n", "<C-s>", ":lua SaveFile()<CR>", { noremap = true, silent = true })
