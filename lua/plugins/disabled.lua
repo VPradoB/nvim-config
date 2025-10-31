@@ -46,4 +46,12 @@ return {
     "sphamba/smear-cursor.nvim",
     enabled = false,
   },
+  {
+    "zbirenbaum/copilot.lua",
+    enabled = false,
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    enabled = false,
+  },
 }
