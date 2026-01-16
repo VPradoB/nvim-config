@@ -5,4 +5,5 @@ return {
   { "folke/flash.nvim", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
   { "folke/persistence.nvim", enabled = false },
+  { "yetone/avante.nvim", enabled = false },
 }
