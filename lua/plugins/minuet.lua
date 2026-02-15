@@ -14,7 +14,7 @@ return {
           name = "Qwen2.5-Coder",
           stream = true,
           optional = {
-            max_tokens = 256,
+            max_tokens = 128,
             temperature = 0.2,
             top_p = 0.95,
           },
