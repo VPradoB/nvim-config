@@ -10,12 +10,12 @@ return {
         openai_fim_compatible = {
           api_key = "TERM",
           end_point = "http://localhost:12434/engines/llama.cpp/v1/completions",
-          model = "huggingface.co/ggml-org/qwen2.5-coder-1.5b-q8_0-gguf",
-          name = "Qwen2.5-Coder",
+          model = "huggingface.co/unsloth/qwen3.5-2b-gguf:q8_0",
+          name = "Qwen3.5-2b",
           stream = true,
           optional = {
             max_tokens = 128,
-            temperature = 0.2,
+            temperature = 0.8,
             top_p = 0.95,
           },
           template = {

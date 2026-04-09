@@ -6,4 +6,5 @@ return {
   { "akinsho/bufferline.nvim", enabled = false },
   { "folke/persistence.nvim", enabled = false },
   { "yetone/avante.nvim", enabled = false },
+  { "coder/claudecode.nvim", enabled = false },
 }
